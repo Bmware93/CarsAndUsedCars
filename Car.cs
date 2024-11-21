@@ -33,6 +33,29 @@ namespace CarsAndUsedCars
 		{
 			return $"{Year} {Make} {Model} {Price}";
 		}
+
+		public static void ListCars()
+		{
+			for(int i = 0; i < Cars.Count; i++)
+			{
+				Console.WriteLine($"{Cars[i].ToString} {i}");
+			}
+		}
+
+		public static void Remove(int indexToRemove)
+		{
+			try
+			{
+                Cars.RemoveAt(indexToRemove);
+            }
+			catch (ArgumentOutOfRangeException error)
+			{
+				Console.WriteLine(error.Message);
+			}
+			
+		}
+
+
 	}
 }
 

@@ -7,8 +7,10 @@ namespace CarsAndUsedCars
 
 		public UsedCar(double milage) : base()
 		{
-			milage = milage;
+			Milage = milage;
 		}
+
+
 	}
 }
 

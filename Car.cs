@@ -26,6 +26,11 @@ namespace CarsAndUsedCars
 			Year = year;
 			Price = price;
 		}
+
+		public override string ToString()
+		{
+			return $"{Year} {Make} {Model} {Price}";
+		}
 	}
 }
 

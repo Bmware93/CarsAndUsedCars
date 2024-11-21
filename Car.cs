@@ -11,6 +11,8 @@ namespace CarsAndUsedCars
 
 		public decimal Price { get; set; }
 
+        public static List<Car> Cars = new();
+
 		public Car()
 		{
 			Make = "";

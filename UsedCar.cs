@@ -10,7 +10,10 @@ namespace CarsAndUsedCars
 			Milage = milage;
 		}
 
-
-	}
+        public override string ToString()
+        {
+			return $"{base.ToString()} {Milage}";
+        }
+    }
 }
 

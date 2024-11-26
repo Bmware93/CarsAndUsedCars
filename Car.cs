@@ -18,7 +18,7 @@ namespace CarsAndUsedCars
 			Make = "";
 			Model = "";
 			Year = 0;
-			Price = 0;
+			Price = 0.00m;
 		}
 
 		public Car(string make, string model, int year, decimal price)
@@ -52,10 +52,7 @@ namespace CarsAndUsedCars
 			{
 				Console.WriteLine(error.Message);
 			}
-			
 		}
-
-
 	}
 }
 

@@ -27,18 +27,18 @@ namespace CarsAndUsedCars
 			Model = model;
 			Year = year;
 			Price = price;
-		}
+        }
 
 		public override string ToString()
 		{
-			return $"{Year} {Make} {Model} {Price}";
+			return $" {Make} {Model} {Year} {Price:c2}";
 		}
 
 		public static void ListCars()
 		{
 			for(int i = 0; i < Cars.Count; i++)
 			{
-				Console.WriteLine($"{Cars[i].ToString} {i}");
+				Console.WriteLine($"{Cars[i].ToString()} {i}");
 			}
 		}
 
